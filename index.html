@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Raneem Mohamed Salah | Software Engineer &amp; UI/UX Designer</title>
+<meta name="description" content="Portfolio of Raneem Mohamed Salah, a full-stack software engineer and Computer Science graduate (AASTMT) based in Alexandria, Egypt. Real client websites, e-commerce and mobile projects.">
+<meta property="og:title" content="Raneem Mohamed Salah | Software Engineer &amp; UI/UX Designer">
+<meta property="og:description" content="Full stack development, QA, and UI/UX design. Computer Science graduate from AASTMT.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230b1426'/><text x='50' y='66' font-size='52' font-family='Arial' font-weight='700' text-anchor='middle' fill='%23f2a900'>R</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b1426;--bg2:#101c34;--card:#14223d;--line:#22345a;--text:#e8edf7;--muted:#9fb0cf;--gold:#f2a900;--gold2:#ffc933}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header{position:sticky;top:0;z-index:20;background:rgba(11,20,38,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-weight:800;letter-spacing:.2px}.logo span{color:var(--gold)}
+nav ul{display:flex;gap:26px;list-style:none;font-size:.92rem;color:var(--muted)}
+nav ul a:hover{color:var(--gold2)}
+.hero{padding:96px 0 80px}
+.eyebrow{color:var(--gold);font-weight:600;font-size:.9rem;letter-spacing:.14em;text-transform:uppercase}
+h1{font-size:clamp(2.2rem,6vw,3.7rem);line-height:1.1;font-weight:800;margin:14px 0 18px;letter-spacing:-.02em}
+h1 em{font-style:normal;color:var(--gold)}
+.lead{max-width:620px;color:var(--muted);font-size:1.08rem}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-block;padding:12px 22px;border-radius:10px;font-weight:600;font-size:.95rem;border:1px solid var(--line);transition:.2s}
+.btn.primary{background:var(--gold);color:#0b1426;border-color:var(--gold)}
+.btn.primary:hover{background:var(--gold2)}
+.btn:not(.primary):hover{border-color:var(--gold);color:var(--gold2)}
+.meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:34px}
+.chip{font-size:.8rem;padding:5px 12px;border:1px solid var(--line);border-radius:999px;color:var(--muted);background:var(--bg2)}
+section{padding:72px 0;border-top:1px solid var(--line)}
+section.alt{background:var(--bg2)}
+h2{font-size:1.9rem;font-weight:800;letter-spacing:-.01em;margin-bottom:8px}
+h2::after{content:"";display:block;width:44px;height:3px;background:var(--gold);margin-top:10px;border-radius:2px}
+.sub{color:var(--muted);margin:14px 0 34px;max-width:640px}
+.about{display:grid;grid-template-columns:1.4fr 1fr;gap:40px;margin-top:30px}
+.about p+p{margin-top:14px}
+.facts{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;font-size:.93rem}
+.facts div{display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px solid var(--line)}
+.facts div:last-child{border:0}.facts b{color:var(--muted);font-weight:500}.facts span{text-align:right}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px;transition:.25s}
+.card:hover{transform:translateY(-4px);border-color:var(--gold)}
+.card h3{font-size:1.08rem;margin-bottom:4px}
+.tag{color:var(--gold);font-size:.78rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase}
+.card p{color:var(--muted);font-size:.93rem;margin-top:10px}
+.stack{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.stack span{font-size:.76rem;padding:3px 10px;border-radius:6px;background:rgba(242,169,0,.1);color:var(--gold2);border:1px solid rgba(242,169,0,.25)}
+.skills h3{font-size:.95rem;color:var(--gold);margin-bottom:12px}
+.skills .stack{margin-top:0}
+.skills .stack span{background:var(--bg);color:var(--text);border-color:var(--line)}
+.timeline{border-left:2px solid var(--line);padding-left:26px;margin-top:10px}
+.job{position:relative;padding-bottom:30px}
+.job::before{content:"";position:absolute;left:-33px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px var(--bg)}
+section.alt .job::before{box-shadow:0 0 0 4px var(--bg2)}
+.job h3{font-size:1.05rem}.job .when{color:var(--muted);font-size:.85rem}
+.job p{color:var(--muted);font-size:.93rem;margin-top:8px}
+.contact{text-align:center}
+.contact h2::after{margin-left:auto;margin-right:auto}
+.contact .sub{margin-left:auto;margin-right:auto}
+.contact .btns{justify-content:center}
+footer{padding:28px 0;border-top:1px solid var(--line);text-align:center;color:var(--muted);font-size:.85rem}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+@media(max-width:720px){nav ul{gap:16px;font-size:.82rem}.about{grid-template-columns:1fr}.hero{padding:64px 0 56px}section{padding:56px 0}}
+@media(max-width:480px){nav ul li:nth-child(n+4){display:none}}
+
+.hero .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center}
+.photo{border-radius:22px;overflow:hidden;border:1px solid var(--line);box-shadow:0 0 0 8px rgba(242,169,0,.08);aspect-ratio:4/5;background:var(--card)}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.proj{padding:0;overflow:hidden;display:flex;flex-direction:column}
+.proj .shot{aspect-ratio:16/10;background:var(--bg);border-bottom:1px solid var(--line);overflow:hidden}
+.proj .shot img{width:100%;height:100%;object-fit:cover;object-position:top;display:block;transition:transform .5s}
+.proj:hover .shot img{transform:scale(1.04)}
+.proj .body{padding:22px 24px 24px;display:flex;flex-direction:column;flex:1}
+.proj .stack{margin-top:auto;padding-top:16px}
+.link{display:inline-block;margin-top:14px;color:var(--gold2);font-weight:600;font-size:.9rem}
+.link:hover{text-decoration:underline}
+.mini{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:22px}
+.mini .card{padding:18px 20px}.mini h3{font-size:.98rem}.mini p{font-size:.86rem;margin-top:6px}
+h3.sec{margin-top:44px;font-size:1.15rem}
+@media(max-width:860px){.hero .wrap{grid-template-columns:1fr}.photo{max-width:320px;order:-1}}
+
+.hero{background:radial-gradient(circle at 85% 0%,rgba(242,169,0,.13),transparent 45%),radial-gradient(circle at 0% 100%,rgba(60,110,220,.16),transparent 50%)}
+.photo{box-shadow:0 30px 60px rgba(0,0,0,.45),0 0 0 8px rgba(242,169,0,.08)}
+.photo img{object-position:center top}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg2)}
+.stats div{padding:26px 12px;text-align:center;border-right:1px solid var(--line)}.stats div:last-child{border:0}
+.stats b{display:block;font-size:2rem;font-weight:800;color:var(--gold);line-height:1.1}.stats span{font-size:.82rem;color:var(--muted);letter-spacing:.04em}
+.flagship{display:grid;grid-template-columns:.9fr 1.3fr;gap:28px;align-items:center;padding:44px 44px 40px;margin-bottom:22px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(135deg,#16264a 0%,#0f1b33 70%);position:relative;overflow:hidden}
+.flagship::before{content:"";position:absolute;right:-120px;top:-120px;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,rgba(242,169,0,.18),transparent 65%);pointer-events:none}
+.flagship h3{font-size:1.9rem;font-weight:800;margin:6px 0 10px;letter-spacing:-.01em}
+.flagship p{color:var(--muted)}
+.points{list-style:none;margin:18px 0 0;font-size:.93rem}
+.points li{padding:3px 0 3px 24px;position:relative;color:var(--text)}
+.points li::before{content:"";position:absolute;left:2px;top:.78em;width:10px;height:6px;border-left:2px solid var(--gold);border-bottom:2px solid var(--gold);transform:rotate(-45deg) translateY(-50%)}
+.phones{display:flex;align-items:center;justify-content:center;position:relative;z-index:1}
+.phones img{height:350px;width:auto;flex:0 0 auto;border-radius:26px;box-shadow:0 26px 50px rgba(0,0,0,.5);margin-left:-14px;border:1px solid rgba(255,255,255,.08)}
+.phones img:first-child{margin-left:0}
+.phones img:nth-child(2){height:395px;z-index:2;transform:translateY(-8px)}
+@media(max-width:900px){.flagship{grid-template-columns:1fr;padding:28px 22px}.phones img{height:260px;border-radius:18px;margin-left:-14px}.phones img:nth-child(2){height:290px}.stats b{font-size:1.5rem}.stats span{font-size:.68rem}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+  <a class="logo" href="#top">Raneem<span></span></a>
+  <ul><li><a href="#about">About</a></li><li><a href="#projects">Projects</a></li><li><a href="#skills">Skills</a></li><li><a href="#experience">Experience</a></li><li><a href="#contact">Contact</a></li></ul>
+</nav></div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+  <div>
+    <p class="eyebrow">Full-Stack Software Engineer</p>
+    <h1>Raneem Mohamed <em>Salah</em></h1>
+    <p class="lead">I specialise in full-stack, front-end, web and mobile app development. I’ve built real client websites and university projects, creating responsive, user-friendly digital solutions with React, Node.js, Shopify, Flutter and Figma.</p>
+    <div class="btns">
+      <a class="btn primary" href="#projects">View my work</a>
+      <a class="btn" href="#contact">Get in touch</a>
+    </div>
+    <div class="meta"><span class="chip">Full-Stack Development</span><span class="chip">UI/UX Design</span><span class="chip">QA &amp; Testing</span><span class="chip">Open to remote roles</span></div>
+  </div>
+  <div class="photo"><img src="raneem.jpg" alt="Portrait of Raneem Mohamed Salah"></div>
+</div></div>
+
+<div class="stats reveal"><div><b>3</b><span>CLIENT WEBSITES</span></div><div><b>4</b><span>INTERNSHIPS &amp; TRAININGS</span></div><div><b>3</b><span>LANGUAGES</span></div></div>
+
+<section id="about"><div class="wrap">
+  <h2 class="reveal">About me</h2>
+  <div class="about reveal">
+    <div>
+      <p>I’m a Computer Science graduate (Software Engineering major) from the Arab Academy for Science, Technology &amp; Maritime Transport (AASTMT). I have hands-on experience building real client websites and university projects, and I enjoy creating products that work well and look good. I’m a native Arabic speaker, fluent in English and French, with strong technical writing skills.</p>
+      <p>My experience covers internships in software engineering, IT, PHP backend development and, most recently, a Full Stack Development virtual internship where I built and deployed authentication and CRUD applications with React and Node.js. On the design side I use Figma to create user flows, wireframes, design systems and interactive prototypes.</p>
+      <p>I’m looking for a remote Software Engineering, QA, or AI Training role where I can contribute and keep growing.</p>
+    </div>
+    <div class="facts">
+      <div><b>Based in</b><span>Alexandria, Egypt</span></div>
+      <div><b>Degree</b><span>B.Sc. Computer Science, 2022 – 2026</span></div>
+      <div><b>Major</b><span>Software Engineering</span></div>
+      <div><b>Languages</b><span>Arabic, English, French</span></div>
+      <div><b>Looking for</b><span>Remote roles</span></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="projects" class="alt"><div class="wrap">
+  <h2 class="reveal">Featured work</h2>
+  <p class="sub reveal">Real client websites and full stack projects, from design in Figma to a working, responsive product.</p>
+  <article class="flagship reveal">
+    <div>
+      <span class="tag">Graduation project</span>
+      <h3>Daleel (دليل)</h3>
+      <p>A bilingual Arabic/English mobile app that brings Egyptian government services into one place. Citizens sign in with their National ID, keep their documents in one vault with expiry reminders, book services, and ask an AI assistant for step-by-step guidance. Guests can browse guides and book services before creating an account.</p>
+      <ul class="points"><li>Layered, feature-first Flutter architecture</li><li>Firebase Auth and Firestore with offline cache</li><li>AI chatbot, document vault and Mandoub marketplace</li></ul>
+      <div class="stack"><span>Flutter</span><span>Firebase</span><span>AWS</span><span>IBM Watson</span><span>Google Maps API</span><span>OCR</span><span>Figma</span></div>
+    </div>
+    <div class="phones">
+      <img src="daleel-home.png" alt="Daleel home dashboard with document expiry notifications and services" loading="lazy">
+      <img src="daleel-chatbot.png" alt="Daleel AI assistant answering how to renew a national ID" loading="lazy">
+      <img src="daleel-signup.png" alt="Daleel sign-up screen with National ID scan" loading="lazy">
+    </div>
+  </article>
+  <div class="grid">
+    <article class="card proj reveal"><div class="shot"><img src="https://res.cloudinary.com/dsy0j0gh0/image/upload/w_900,q_auto,f_auto/v1776465241/zonefolio/raneemsalah/projects/raneemsalah-project-1.jpg" alt="Blackstone website" loading="lazy" onerror="this.parentNode.style.display='none'"></div><div class="body"><span class="tag">Client website</span><h3>Blackstone</h3><p>A professional, fully responsive website for Blackstone, a leading American poultry company based in Texas, USA. A clean, trustworthy platform with service showcases, product information, business details and optimised contact systems.</p><div class="stack"><span>React</span><span>Node.js</span><span>JavaScript</span><span>Figma</span><span>Git</span></div></div></article>
+    <article class="card proj reveal"><div class="shot"><img src="https://res.cloudinary.com/dsy0j0gh0/image/upload/w_900,q_auto,f_auto/v1776465241/zonefolio/raneemsalah/projects/raneemsalah-project-2.jpg" alt="Hayan website" loading="lazy" onerror="this.parentNode.style.display='none'"></div><div class="body"><span class="tag">Client website</span><h3>Hayan</h3><p>A modern, fully responsive brand website for the client Hayan, with clean UI/UX, smooth navigation and a professional design that meets the client’s requirements.</p><a class="link" href="https://hayanpharma.com" target="_blank" rel="noopener">Visit live site ↗</a><div class="stack"><span>JavaScript</span><span>Figma</span></div></div></article>
+    <article class="card proj reveal"><div class="shot"><img src="https://res.cloudinary.com/dsy0j0gh0/image/upload/w_900,q_auto,f_auto/v1776465242/zonefolio/raneemsalah/projects/raneemsalah-project-3.jpg" alt="Relax Body website" loading="lazy" onerror="this.parentNode.style.display='none'"></div><div class="body"><span class="tag">Client website</span><h3>Relax Body</h3><p>An elegant, calming responsive website for the Relax Body wellness brand, with smooth booking flows and a mobile-first design focused on user experience.</p><a class="link" href="https://relax-body.sa" target="_blank" rel="noopener">Visit live site ↗</a><div class="stack"><span>React</span><span>JavaScript</span><span>Figma</span><span>Git</span></div></div></article>
+    <article class="card proj reveal"><div class="shot"><img src="lokal.png" alt="Lokal e-commerce sign-up screen" loading="lazy"></div><div class="body"><span class="tag">Full stack · University project</span><h3>Lokal – E-commerce Website</h3><p>A full-stack e-commerce website bringing local clothing brands together in one place. I designed the complete UI and user flows in Figma, then built a responsive React frontend and a Node.js backend with a product catalog, shopping cart and checkout, optimised for desktop and mobile.</p><div class="stack"><span>React</span><span>Node.js</span><span>JavaScript</span><span>Figma</span><span>Git</span></div></div></article>
+    <article class="card proj reveal"><div class="shot"><img src="https://res.cloudinary.com/dsy0j0gh0/image/upload/w_900,q_auto,f_auto/v1776465244/zonefolio/raneemsalah/projects/raneemsalah-project-5.jpg" alt="Kings Trip website" loading="lazy" onerror="this.parentNode.style.display='none'"></div><div class="body"><span class="tag">Full stack</span><h3>Kings Trip</h3><p>A complete full-stack travel booking and planning platform (web and mobile elements) where users browse trips, make bookings and manage reservations through a clean, modern interface.</p><div class="stack"><span>Full stack</span><span>Web</span><span>Mobile</span></div></div></article>
+  </div>
+  <h3 class="sec reveal">More projects</h3>
+  <div class="mini">
+    <div class="card reveal"><span class="tag">Internship</span><h3>Secure Authentication App</h3><p>React + Node.js/Express app with password hashing, token-based sessions and protected endpoints. Deployed on Railway and Vercel.</p></div>
+    <div class="card reveal"><span class="tag">Internship</span><h3>Employee Management System</h3><p>CRUD application built with React, Node.js/Express and SQLite.</p></div>
+    <div class="card reveal"><span class="tag">UI/UX · QA</span><h3>Food Delivery Design &amp; Testing</h3><p>A full Figma design system with personas and prototypes, plus a software testing project using Testiny and Trello.</p></div>
+  </div>
+  <div class="btns reveal"><a class="btn" href="https://github.com/raneemsalahh" target="_blank" rel="noopener">More on GitHub</a></div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2 class="reveal">Skills</h2>
+  <div class="grid skills" style="margin-top:34px">
+    <div class="card reveal"><h3>Languages</h3><div class="stack"><span>Python</span><span>Java</span><span>C</span><span>C++</span><span>PHP</span><span>JavaScript</span><span>SQL</span></div></div>
+    <div class="card reveal"><h3>Web &amp; Backend</h3><div class="stack"><span>HTML5</span><span>CSS3</span><span>Bootstrap</span><span>React</span><span>Node.js</span><span>Express.js</span><span>Shopify</span><span>REST APIs</span></div></div>
+    <div class="card reveal"><h3>Mobile</h3><div class="stack"><span>Flutter</span><span>Android Studio</span></div></div>
+    <div class="card reveal"><h3>Databases</h3><div class="stack"><span>MySQL</span><span>SQLite</span></div></div>
+    <div class="card reveal"><h3>Software Engineering &amp; QA</h3><div class="stack"><span>OOP</span><span>Data Structures</span><span>Algorithms</span><span>SDLC</span><span>Software Testing</span><span>Debugging</span><span>Git &amp; GitHub</span></div></div>
+    <div class="card reveal"><h3>UI/UX</h3><div class="stack"><span>Figma</span><span>Wireframing</span><span>User Flow</span><span>Design Systems</span><span>Prototyping</span></div></div>
+    <div class="card reveal"><h3>AI &amp; Data</h3><div class="stack"><span>Prompt Evaluation</span><span>Data Annotation</span><span>Model Response Evaluation</span><span>Dataset Preparation</span></div></div>
+  </div>
+</div></section>
+
+<section id="experience" class="alt"><div class="wrap">
+  <h2 class="reveal">Experience</h2>
+  <div class="timeline reveal">
+    <div class="job"><h3>Full Stack Development Virtual Intern</h3><div class="when">B.Y.T.E by Arithmatrix Tech · Sep 2026 – Oct 2026 · Remote</div>
+      <p>Built a secure authentication app and an Employee Management System using React, Node.js/Express and SQLite, and deployed the app on Railway and Vercel.</p></div>
+    <div class="job"><h3>PHP Development Trainee</h3><div class="when">Findo Group · 2025</div>
+      <p>Backend web development training using PHP and MySQL fundamentals.</p></div>
+    <div class="job"><h3>IT Intern</h3><div class="when">Alex Gases and Metal Works Company · Aug – Sep 2024</div>
+      <p>Supported IT operations and learned infrastructure, system management and organisational workflows.</p></div>
+    <div class="job" style="padding-bottom:0"><h3>Software Engineering Intern</h3><div class="when">AppSoft Company · Jul – Aug 2024</div>
+      <p>Worked on software development processes and the SDLC, including debugging and testing, within a development team.</p></div>
+  </div>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+  <h2 class="reveal">Let’s work together</h2>
+  <p class="sub reveal">I’m open to remote Software Engineering, QA, AI Training and UI/UX opportunities. Feel free to reach out.</p>
+  <div class="btns reveal">
+    <a class="btn primary" href="mailto:raneemmohamedd1@gmail.com">raneemmohamedd1@gmail.com</a>
+    <a class="btn" href="https://wa.me/201279800652" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="btn" href="https://www.linkedin.com/in/raneem-salah-59a6b828b" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn" href="https://github.com/raneemsalahh" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">+20 127 980 0652 · Alexandria, Egypt<br>© <span id="yr">2026</span> Raneem Mohamed Salah</div></footer>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+var els=document.querySelectorAll('.reveal');
+if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.12});
+  els.forEach(function(el){io.observe(el)});
+}else{els.forEach(function(el){el.classList.add('in')})}
+</script>
+</body>
+</html>
